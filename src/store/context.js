@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLocalStore } from 'mobx-react-lite';
-import { createStore } from './index';
+// import { createStore } from './index';
+import { createStore } from '../newStore';
 
 export const storeContext = React.createContext();
 
