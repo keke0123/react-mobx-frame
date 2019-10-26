@@ -4,8 +4,8 @@ import namesStore from './names';
 
 export const createStore = () => {
     const store = {
-        fruitStore,
-        namesStore
+        fruitStore: fruitStore(),
+        namesStore: namesStore()
     }
     return store;
 }
