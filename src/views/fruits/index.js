@@ -7,12 +7,16 @@ function Fruits() {
     const store = React.useContext(storeContext);
     console.log('store', store);
     console.log('allFruits', store.allFruits);
+    store.setQuery('hihi');
+    console.log('query', store.query.get());
     
-    return (
-        <div>
-            fruits page
-        </div>
-    );
+    return useObserver(() => {
+        return (
+            <div>
+                fruits page
+            </div>
+        );
+    });
 }
 
 export default Fruits;
