@@ -9,7 +9,7 @@ const Fruits = [
 
 export const createStore = () => {
     const store = {
-        get allFruit() {
+        get allFruits() {
             return Fruits;
         }
     }
